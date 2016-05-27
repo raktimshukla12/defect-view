@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="suite" verbose="1" parallel="tests">
+
+	<test name="Main_Windows_FF" thread-count="1">
+		<parameters>
+			<parameter name="platform" value="windows" />
+			<parameter name="browser" value="firefox" />
+			<parameter name="nodeURl" value="http://192.168.1.21:4444/wd/hub" />
+			<parameter name="priority" value="major" />
+		</parameters>
+		<classes>
+			<class name="com.webomates.app.testcases.Main">
+				<methods>
+					<include name="Dashboard_Header_Verify_UI" />
+					<include name="Dashboard_Sidebar_Verify_UI" />
+					<include name="Dashboard_Pie_Chart_Panel_Verify_UI" />
+					<include name="Dashboard_Priority_Bar_Panel_Verify_UI" />
+					<include name="Dashboard_Defect_Description_Table_Panel_Verify_UI" />
+					<include name="Dashboard_Footer_Verify_UI" />
+					<include name="validate_pie_chart_navigation" /> 
+					<include name="validate_priority_bar_navigation" />
+					<include name="validate_details_table_navigation" /> 
+					<include name="validate_about_us_navigation" />
+					<include name="Dashboard_PieChart_Click_Validate_UI" />
+					<include name="validate_legends_enable_disable_functionality" />					
+					<include name="btn_Logout" />	
+					<include name="validateTableData" />					 
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
