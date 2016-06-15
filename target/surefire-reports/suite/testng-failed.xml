@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [suite]" parallel="tests">
+  <parameter name="browser" value="firefox"/>
+  <parameter name="nodeURl" value=""/>
+  <parameter name="priority" value="major"/>
+  <parameter name="platform" value="windows"/>
+  <test name="Main_Windows_FF(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <parameter name="nodeURl" value=""/>
+    <parameter name="priority" value="major"/>
+    <parameter name="platform" value="windows"/>
+    <classes>
+      <class name="com.webomates.app.testcases.PriorityBar">
+        <methods>
+          <include name="read"/>
+          <include name="PriorityBar_Panel_Verify_UI"/>
+        </methods>
+      </class> <!-- com.webomates.app.testcases.PriorityBar -->
+    </classes>
+  </test> <!-- Main_Windows_FF(failed) -->
+</suite> <!-- Failed suite [suite] -->

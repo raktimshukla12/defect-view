@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 5.595 sec <<< FAILURE!
+PriorityBar_Panel_Verify_UI(com.webomates.app.testcases.PriorityBar)  Time elapsed: 0.659 sec  <<< FAILURE!
+java.lang.AssertionError: expected [Data Table] but found [Description Table]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:178)
+	at org.testng.Assert.assertEquals(Assert.java:188)
+	at com.webomates.app.util.Util.assertElementText(Util.java:73)
+	at com.webomates.app.testcases.PriorityBar.PriorityBar_Panel_Verify_UI(PriorityBar.java:28)
+

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="suite" verbose="1" parallel="tests">
+
+	<test name="Main_Windows_FF" thread-count="1">
+		<parameters>
+			<parameter name="platform" value="windows" />
+			<parameter name="browser" value="firefox" />
+			<parameter name="nodeURl" value="" />
+			<parameter name="priority" value="major" />
+		</parameters>
+		<classes>
+			<!-- <class name="com.webomates.app.testcases.Dashboard">
+				<methods>
+					<include name="Dashboard_Header_Verify_UI" />
+					<include name="Dashboard_Sidebar_Verify_UI" />
+					<include name="Dashboard_Pie_Chart_Panel_Verify_UI" />
+					<include name="Dashboard_Priority_Bar_Panel_Verify_UI" />
+					<include name="Dashboard_Defect_Description_Table_Panel_Verify_UI" />
+					<include name="Dashboard_Footer_Verify_UI" />
+					<include name="Dashboard_Sidebar_Click_PieChart_ValidateNavigation" /> 
+					<include name="Dashboard_Sidebar_Click_PriorityBarGraph_ValidateNavigation" />
+					<include name="Dashboard_Sidebar_Click_DescriptionTable_ValidateNavigation" /> 
+					<include name="Dashboard_Sidebar_Click_AboutUs_ValidateNavigation" />
+					<include name="Dashboard_PieChart_Click_Verify_UI" />
+					<include name="Dashboard_PieChart_ClickLegends_Enable_DisableFunctionality" />	
+					<include name="Dashboard_PriorityBarGraph_ClickLegends_Enable_DisableFunctionality" />			
+					<include name="Dashboard_DefectDescription_Validate_Table_Data" />
+					<include name="Dashboard_Click_Logo_ValidateNavigation" />	
+					<include name="Dashboard_Click_Logout_ValidateNavigation" />									 
+				</methods>
+			</class>			
+			<class name="com.webomates.app.testcases.PieChart">
+				<methods>				
+					<include name="PieChart_Vaidate_Navigation" />
+					<include name="PieChart_Verify_UI" />
+					<include name="PieChart_Verify_DefectSeverity_GraphUI" />
+					<include name="PieChart_Click_GraphSection_VerifyUI" />
+					<include name="PieChart_Verify_Click_DefectSeverity_GraphLegend" />
+				</methods>
+			</class> -->
+			<class name="com.webomates.app.testcases.PriorityBar">
+				<methods>
+					<include name="PriorityBar_ClickLegends_Enable_DisableFunctionality" />
+					<include name="PriorityBar_Panel_Verify_UI" />									 
+				</methods>
+			</class> 			
+			<!-- <class name="com.webomates.app.testcases.DescriptionTable">
+				<methods>				
+					<include name="Vaidate_Description_Table_Navigation" />
+					<include name="DescriptionTable_Verify_PageUI" />	
+					<include name="DescriptionTable_Validate_DefectsDescription_DataGridUI" />
+					<include name="DescriptionTable_Validate_DefectsDescription_DataGridDetails" />					
+				</methods>
+			</class> -->
+		</classes>
+	</test>
+</suite>
